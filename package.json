@@ -1,5 +1,5 @@
 {
-  "name": "frontend-developer-test",
+  "name": "rock-paper-scissors-etc",
   "description": "Gumtree UK frontend developer test project",
   "version": "3.0.0",
   "engines": {
@@ -7,10 +7,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:gumtreeuk/rockpaperscissors.git"
+    "url": "git@github.com:fromflux/rock-paper-scissors-etc.git"
   },
   "scripts": {
-    "dev": "webpack-dev-server --content-base --mode development",
+    "dev": "webpack-dev-server  --host 0.0.0.0 --content-base --mode development",
     "lint": "eslint . --ext .js",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -19,8 +19,11 @@
   "devDependencies": {
     "@babel/core": "7.6.4",
     "@babel/preset-env": "7.6.3",
+    "@testing-library/dom": "^6.11.0",
+    "@testing-library/jest-dom": "^4.2.4",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.5",
+    "copy-webpack-plugin": "^5.1.1",
     "core-js": "^3.3.6",
     "css-loader": "^3.2.0",
     "eslint": "6.6.0",
@@ -39,5 +42,10 @@
     "webpack-core": "^0.6.9",
     "webpack-dev-server": "^3.9.0"
   },
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  }
 }

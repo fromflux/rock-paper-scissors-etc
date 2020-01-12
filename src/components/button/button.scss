@@ -1,0 +1,12 @@
+@import '../../theme/colours.scss';
+
+.button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 0 0.5em 0.2em 0.5em;
+  border: 3px solid $foreground;
+  background-color: $background;
+  margin: 0.1em;
+  cursor: pointer;
+}

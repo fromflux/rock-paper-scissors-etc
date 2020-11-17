@@ -1,0 +1,64 @@
+@import '../../theme/colours.scss';
+
+@font-face {
+  font-family: '55';
+  src: url('/static/55.ttf');
+  src: url('/static/55.ttf') format('truetype')
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  background-color: $background;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+  color: $foreground;
+  background-color: $background;
+
+  font-family: '55', 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  font-weight: bold;
+
+  header {
+    padding: 1em;
+    text-align: center;
+
+    > span {
+      display: inline-block;
+      padding-bottom: 0.5em;
+      border-bottom: 3px solid black;
+    }
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    & > div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 0.5em;
+      text-align: center;
+    }
+
+    #app-menu,
+    #game-menu {
+      flex-direction: column;
+      min-width: 50%;
+      align-self: center;
+    }
+  }
+
+  footer {
+    padding: 1em;
+    text-align: center;
+  }
+}

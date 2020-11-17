@@ -1,4 +1,4 @@
-import { ROCK_PAPER_SCISSORS as currentRules } from '../lib/engine';
+import { ROCK_PAPER_SCISSORS_SPOCK_LIZARD as currentRules } from '../lib/engine';
 
 export const GAME_SCREENS = {
   MENU: 'MENU',

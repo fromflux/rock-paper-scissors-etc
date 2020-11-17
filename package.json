@@ -1,6 +1,6 @@
 {
   "name": "rock-paper-scissors-etc",
-  "description": "Gumtree UK frontend developer test project",
+  "description": "Rock, Paper, Scissors game implementation with variable rule set using VanillaJS",
   "version": "3.0.0",
   "engines": {
     "node": ">=10.15.3"
@@ -42,7 +42,7 @@
     "webpack-core": "^0.6.9",
     "webpack-dev-server": "^3.9.0"
   },
-  "license": "UNLICENSED",
+  "license": "GPL-3.0",
   "jest": {
     "moduleNameMapper": {
       "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js"
